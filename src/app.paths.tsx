@@ -42,7 +42,35 @@ class AppRoutes {
   getExampleByIdPageUrl(id:string):string{
     return this.getExampleByIdPagePath().replace(':id',id);
   }
-  // ./Example
+  // 
+  // about us
+  getAboutUsPagePath(): string {
+    return `/about-us`;
+  }
+  getAboutUsPageUrl(): string {
+    return this.getAboutUsPagePath();
+  }
+  // contact us 
+  getContactUsPagePath(): string {
+    return `/contact-us`;
+  }
+  getContactUsPageUrl(): string {
+    return this.getContactUsPagePath();
+  }
+  //  services  
+  getServicesPagePath(): string {
+    return `/services`;
+  }
+  getServicesPageUrl(): string {
+    return this.getServicesPagePath();
+  }
+  //  payment  
+  getPaymentPagePath(): string {
+    return `/payment`;
+  }
+  getPaymentPageUrl(): string {
+    return this.getPaymentPagePath();
+  }
 }
 
 export const appRoutesObj = AppRoutes.getInstance();

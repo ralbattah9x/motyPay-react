@@ -4,7 +4,38 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
    ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        darkGreen:"#719952",
+        lightGreen:"#A2C587",
+        grey:"#F5F5F5",
+        buttonLight:"#EDFFDF",
+      },
+      fontFamily:{
+        title:"Manrope-ExtraBold",
+        subTitle:"Manrope-Medium",
+        regTitle:"Manrope-Regular",
+      },
+      screens: {
+        sm: { max: "767px" },
+        // => @media (min-width: 640px and max-width: 767px) { ... }
+
+        md: { min: "768px", max: "1023px" },
+        // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+        lg: { min: "1024px", max: "1279px" },
+        // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+        xl: { min: "1280px", max: "1535px" },
+        // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+        "2xl": { min: "1536px" },
+        // => @media (min-width: 1536px) { ... }
+      },
+      backgroundImage:{
+        homeBG:"url('/public/assets/images/Modern - 1.png')",
+      },
+    },
   },
   plugins: [],
 }

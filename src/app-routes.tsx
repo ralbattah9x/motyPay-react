@@ -6,6 +6,10 @@ import { appRoutesObj } from "./app.paths";
 
 const ExamplePage = React.lazy(() => import('./pages/user/example-page'));
 const NotFoundPage = React.lazy(() => import('./pages/404'));
+const AboutUsPage = React.lazy(() => import('./pages/user/aboutUs-page'));
+const ContactUsPage = React.lazy(() => import('./pages/user/contactUs-page'));
+const PaymentPage = React.lazy(() => import('./pages/user/payment-page'));
+const ServicesPage = React.lazy(() => import('./pages/user/services-page'));
 
 const withSuspense = (WrappedComponent: JSX.Element) => {
   return (
@@ -51,6 +55,31 @@ export function AppRouting() {
               element={withSuspense(<NotFoundPage />)}
             />
          
+
+         <Route
+            key="AboutUsPage"
+            path={appRoutesObj.getAboutUsPagePath()}
+            element={withSuspense(<AboutUsPage />)}
+          />
+
+          <Route
+            key="ContactUsPage"
+            path={appRoutesObj.getContactUsPagePath()}
+            element={withSuspense(<ContactUsPage />)}
+          />
+
+
+<Route
+            key="PaymentPage"
+            path={appRoutesObj.getPaymentPagePath()}
+            element={withSuspense(<PaymentPage />)}
+          />
+
+          <Route
+            key="ServicesPage"
+            path={appRoutesObj.getServicesPagePath()}
+            element={withSuspense(<ServicesPage />)}
+          />
              
           </Routes>
         </BrowserRouter>

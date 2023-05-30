@@ -1,3 +1,9 @@
 {
-  "app.name": "Example"
+  "nav.bar.about.us":"About",
+  "nav.bar.contact.us":"Contact us",
+  "nav.bar.payment":"Payment",
+  "nav.bar.services":"Services",
+  "nav.bar.join.us":"Join Us",
+  "home.page.your":"Financial Future In a Single Card",
+  "home.page.English":"English"
 }
