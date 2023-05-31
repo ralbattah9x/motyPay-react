@@ -1,8 +1,8 @@
 {
   "nav.bar.about.us":"About",
   "nav.bar.contact.us":"Contact us",
-  "nav.bar.payment":"Payment",
-  "nav.bar.services":"Services",
+  "nav.bar.payment":"Services",
+  "nav.bar.services":"Payment",
   "nav.bar.join.us":"Join Us",
   "home.page.your":"Financial Future In a Single Card",
   "home.page.subTitle1":" 👍 Meet the credit card of the future ",
@@ -17,13 +17,13 @@
   "contact.page.day":"(Monday - Friday, 9am to 4pm )",
   "contact.page.phone":"966553291144+",
   "payment.page.services":"Our services",
-  "payment.page.card1":"Credit & debit cards",
+  "payment.page.card1":"Credit &   debit cards",
   "payment.page.card2":"Wealth Management",
   "payment.page.card3":"Loans & credits",
   "payment.page.title1":"The best banking",
   "payment.page.title2":"services just for you",
   "payment.page.subTitle1":"MotyPay consistently offers the most flexible",
-  "payment.page.subTitle2":"and best banking services to their users.",
+  "payment.page.subTitle2":"and best banking services to their users",
   "services.page.not":"Nothing for now xD",
   "home.page.English":"English"
 }

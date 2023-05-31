@@ -6,7 +6,7 @@ import Text from "src/components/user/text";
 function AboutUsPage() {
     return (
 
-        <div className="flex gap-[95px] justify-evenly sm:justify-center sm:items-center sm:flex-col md:pt-[100px] md:pr-5 md:pl-5 xl:p-5 lg:p-5">
+        <div className="flex gap-[95px] justify-evenly sm:justify-center sm:items-center sm:flex-col md:pt-[100px] md:pr-5 md:pl-5 xl:p-5 lg:p-5 sm:p-3">
 
             <div className="pt-[100px]  ">
                 <img className=" h-[800px] sm:h-[400px] md:h-[600px]  " src="/assets/images/card.png" alt="" />
@@ -18,8 +18,8 @@ function AboutUsPage() {
                     <Text text={t("home.page.title2")} textFont="font-title" textSize="text-[64px] sm:text-[40px] md:text-[35px] lg:text-[45px] xl:text-[45px] " color="font-black" />
                 </div>
                 <div className="flex flex-col items-end ">
-                    <Text text={t("home.page.subTitle2")} textFont="font-regTitle" textSize="text-[20px] md:text-[12px] lg:text-[16px] xl:text-[14px]" color="text-black" />
-                    <Text text={t("home.page.subTitle3")} textFont="font-regTitle" textSize="text-[20px] md:text-[12px] lg:text-[16px] xl:text-[14px]" color="text-black" />
+                    <Text text={t("home.page.subTitle2")} textFont="font-regTitle" textSize="text-[20px] sm:text-[14px] md:text-[12px] lg:text-[16px] xl:text-[14px]" color="text-black" />
+                    <Text text={t("home.page.subTitle3")} textFont="font-regTitle" textSize="text-[20px] sm:text-[14px] md:text-[12px] lg:text-[16px] xl:text-[14px]" color="text-black" />
                 </div>
 
                 <div className=" flex  items-center sm:flex-col sm: gap-5 pt-10 sm:items-end">
