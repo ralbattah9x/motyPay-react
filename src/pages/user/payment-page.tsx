@@ -10,16 +10,16 @@ function PaymentPage() {
         <Layout>
            
             <div className="items-center justify-center bg-[#F8F8F8] h-screen ">
-            <div className="flex pt-[200px] gap-[85px] justify-evenly sm:justify-center sm:items-center sm:flex-col md:pt-[100px] md:pr-5 md:pl-5 xl:p-5 lg:p-5 lg:pt-[150px] xl:pt-[150px]">
+            <div className="flex pt-[200px] gap-[85px] sm:gap-[40px] justify-evenly sm:justify-end sm:items-end sm:flex-col md:pt-[100px] md:pr-5 md:pl-5 xl:p-5 lg:p-5 lg:pt-[150px] xl:pt-[150px]">
 
-<div className=" flex flex-col items-end justify-center gap-5 ">
+<div className=" flex flex-col items-end justify-center gap-5 sm:p-4 ">
      <div className="bg-lightGreen h-[29px] w-[102px]  rounded-[20px] ">
      <p className="text-[14px] font-subTitle justify-center items-center text-white text-center">{t("payment.page.services")}</p>
      </div>
      
-     <div className="flex flex-col items-end ">
-                    <Text text={t("payment.page.title1")} textFont="font-title" textSize="text-[42px] md:text-[30px] lg:text-[30px] xl:text-[30px]" color="text-black" />
-                    <Text text={t("payment.page.title2")} textFont="font-title" textSize="text-[42px] md:text-[30px] lg:text-[30px] xl:text-[30px]" color="text-black" />
+     <div className="flex flex-col items-end  ">
+                    <Text text={t("payment.page.title1")} textFont="font-title" textSize="text-[42px] sm:text-[35px] md:text-[30px] lg:text-[30px] xl:text-[30px]" color="text-black" />
+                    <Text text={t("payment.page.title2")} textFont="font-title" textSize="text-[42px] sm:text-[35px] md:text-[30px] lg:text-[30px] xl:text-[30px]" color="text-black" />
                 </div>
 
 
@@ -37,7 +37,7 @@ function PaymentPage() {
                 </div>
    
 </div>
-<div className="grid grid-cols-2 gap-[54px] ">
+<div className="grid grid-cols-2 gap-[54px] sm:gap-[30px] sm:p-3">
     
     <div className="bg-white gap-[24px] h-[180px] w-[180px] rounded-[15px] flex justify-center items-center flex-col">
         <img src="/assets/icons/bi_credit-card-2-front.png" alt="" className="h-[24px] w-[18px]  items-center justify-center" />
