@@ -19,11 +19,11 @@ const routes: IRoutes[] = [
     },
     {
         routeTitle: "nav.bar.services",
-        pageRoute: appRoutesObj.getPaymentPagePath()
+        pageRoute: appRoutesObj.getServicesPagePath()
     },
     {
         routeTitle: "nav.bar.payment",
-        pageRoute: appRoutesObj.getServicesPagePath()
+        pageRoute: appRoutesObj.getPaymentPagePath()
     },
     {
         routeTitle: "nav.bar.about.us",
@@ -46,22 +46,22 @@ function NavBar() {
     return (
 
 
-        <div className="container mx-auto flex  sm:justify-start ">
-            <div className={`flex  justify-between sm:flex-col sm:h-screen sm:w-1/2 h-[72px] w-full items-center bg-white sm:bg-[#f3f5ed]  sm:justify-start sm:items-start sm:gap-[50px] px-[16px] sm:pt-[57px] ${open ? '' : 'sm:hidden'}`}>
+        <div className="container mx-auto flex  sm:justify-end  ">
+            <div className={`flex  justify-between sm:flex-col sm:h-screen sm:w-1/2 h-[72px] w-full items-center bg-white sm:bg-[#f3f5ed]  sm:justify-start sm:items-end sm:gap-[50px] px-[16px] sm:pt-[57px] ${open ? '' : 'sm:hidden'} sm:fixed `}>
             <div className="flex justify-end items-end w-full 2xl:hidden xl:hidden lg:hidden md:hidden ">
                     <CgClose onClick={() => setOpen(false)} className="text-[30px] text-whiteColor" />
                 </div>
-            <div className="flex items-center ">
-                        <div className=" flex  items-center sm:flex-col sm: gap-0 ">
+            <div className="flex items-center  ">
+                        <div className=" flex  items-center sm:flex-col sm: gap-5  ">
                             <Button buttonSize={"w-[153px] h-[47px]"} textColor={"text-darkGreen"} text={t('nav.bar.join.us')} color={"bg-buttonLight"} onClick={()=>(console.info)}/>
                             <Button buttonSize={"w-[153px] h-[47px]"} textColor={"text-lightGreen"} text={t('home.page.English')} color={"bg-white"} onClick={()=>(changeLanguage())}/>
                         </div>
                        
                     </div>
 
-                <div className="flex items-center  gap-[100px] sm:flex-col">
+                <div className="flex items-center gap-[100px] sm:gap-[100px] sm:flex-col  lg:gap-[50px] xl:gap-[50px]">
                     
-                    <nav className="flex gap-[40px] md:gap-3 md:text-[12px] font-subTitle sm:flex-col ">
+                    <nav className="flex gap-[40px] md:gap-3 md:text-[12px] font-subTitle sm:flex-col sm:items-end ">
                         {
                             routes.map((items, index) => {
                                 return <NavLink key={index} to={items.pageRoute}>
@@ -71,8 +71,8 @@ function NavBar() {
                         }
                     </nav>
 
-                    <div className="flex">
-                        <img src="/assets/images/logoM.png" alt="" className="w-[89px] h-[27px] " />
+                    <div className="flex lg:p-[100px] md:p-[110px]">
+                        <img src="/assets/images/logoM.png" alt="" className="w-[89px] h-[27px]" />
                     </div>
                 </div>
 
