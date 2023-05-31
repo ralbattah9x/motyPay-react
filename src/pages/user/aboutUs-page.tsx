@@ -1,9 +1,10 @@
-import { t, changeLanguage } from "i18next";
+import { changeLanguage } from "i18next";
+import { useTranslation } from "react-i18next";
 import Button from "src/components/user/button";
-import Layout from "src/components/user/layout";
 import Text from "src/components/user/text";
 
 function AboutUsPage() {
+    const {t} = useTranslation()
     return (
 
         <div className="flex gap-[95px] justify-evenly sm:justify-center sm:items-center sm:flex-col md:pt-[100px] md:pr-5 md:pl-5 xl:p-5 lg:p-5 sm:p-3">

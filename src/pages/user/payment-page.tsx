@@ -35,22 +35,22 @@ function PaymentPage() {
                         </div>
 
                     </div>
-                    <div className="grid grid-cols-2 gap-[54px] sm:gap-[30px]">
+                    <div className="grid grid-cols-2 gap-[54px] sm:gap-[30px] sm:pr-6 sm:pl-6">
 
-                        <div className="bg-white gap-[24px] h-[180px] w-[180px] rounded-[15px] flex justify-center items-center flex-col">
+                        <div className="bg-white gap-[24px] h-[180px] w-[180px] sm:h-[150px] sm:w-[150px] rounded-[15px] flex justify-center items-center flex-col">
                             <img src="/assets/icons/bi_credit-card-2-front.png" alt="" className="h-[24px] w-[18px]  items-center justify-center" />
-                            <Text text={t("payment.page.card1")} color="text-black" textFont="font-subTitle " textSize="text-[18px]" />
+                            <Text text={t("payment.page.card1")} color="text-black" textFont="font-subTitle " textSize="text-[18px] sm:text-center" />
                         </div>
-                        <div className="bg-black h-[180px] w-[180px] rounded-[15px] flex justify-center items-center ">
+                        <div className="bg-black h-[180px] w-[180px] sm:h-[150px] sm:w-[150px] rounded-[15px] flex justify-center items-center ">
                             <img src="/assets/icons/fluent_wallet-credit-card-32-filled.png" alt="" className="h-[40px] w-[40px]  items-center justify-center" />
                         </div>
-                        <div className="bg-white gap-[24px] h-[180px] w-[180px] rounded-[15px] flex justify-center items-center flex-col">
+                        <div className="bg-white gap-[24px] h-[180px] w-[180px] sm:h-[150px] sm:w-[150px] rounded-[15px] flex justify-center items-center flex-col">
                             <img src="/assets/icons/solar_wallet-money-linear.png" alt="" className="h-[24px] w-[18px]  items-center justify-center" />
-                            <Text text={t("payment.page.card2")} color="text-black" textFont="font-subTitle" textSize="text-[18px]" />
+                            <Text text={t("payment.page.card2")} color="text-black" textFont="font-subTitle" textSize="text-[18px] sm:text-center" />
                         </div>
-                        <div className="bg-white gap-[24px] h-[180px] w-[180px] rounded-[15px] flex justify-center items-center flex-col">
+                        <div className="bg-white gap-[24px] h-[180px] w-[180px]  sm:h-[150px] sm:w-[150px] rounded-[15px] flex justify-center items-center flex-col">
                             <img src="/assets/icons/solar_hand-money-outline.png" alt="" className="h-[24px] w-[18px]  items-center justify-center" />
-                            <Text text={t("payment.page.card3")} color="text-black" textFont="font-subTitle" textSize="text-[18px]" />
+                            <Text text={t("payment.page.card3")} color="text-black" textFont="font-subTitle" textSize="text-[18px] sm:text-center" />
                         </div>
 
 
